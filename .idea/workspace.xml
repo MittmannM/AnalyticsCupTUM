@@ -4,8 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment="VIF testing">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment=".">
       <change beforePath="$PROJECT_DIR$/AC.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="DecisionTree" />
+        <entry key="$PROJECT_DIR$" value="RandomForrestClassifier" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -41,7 +40,7 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "test",
+    "git-widget-placeholder": "DecisionTree",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1704629254773</updated>
       <workItem from="1704629256393" duration="1365000" />
-      <workItem from="1704713736660" duration="11661000" />
+      <workItem from="1704713736660" duration="12502000" />
     </task>
     <task id="LOCAL-00001" summary="decision tree with tuning hyperparameters">
       <option name="closed" value="true" />
@@ -118,7 +117,23 @@
       <option name="project" value="LOCAL" />
       <updated>1704725793964</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=".">
+      <option name="closed" value="true" />
+      <created>1704727243182</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727243182</updated>
+    </task>
+    <task id="LOCAL-00006" summary=".">
+      <option name="closed" value="true" />
+      <created>1704727362576</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1704727362576</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -129,6 +144,7 @@
     <MESSAGE value="decision tree remoed tuning" />
     <MESSAGE value="decision tree removed tuning" />
     <MESSAGE value="VIF testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="VIF testing" />
+    <MESSAGE value="." />
+    <option name="LAST_COMMIT_MESSAGE" value="." />
   </component>
 </project>
