@@ -1,0 +1,898 @@
+Index: AC_dataplots.ipynb
+===================================================================
+diff --git a/AC_dataplots.ipynb b/AC_dataplots.ipynb
+--- a/AC_dataplots.ipynb	
++++ b/AC_dataplots.ipynb	
+@@ -28,9 +28,12 @@
+    ],
+    "metadata": {
+     "collapsed": false,
+-    "is_executing": true
++    "ExecuteTime": {
++     "end_time": "2024-01-13T19:17:18.468034Z",
++     "start_time": "2024-01-13T19:17:18.435471Z"
++    }
+    },
+-   "execution_count": null
++   "execution_count": 1
+   },
+   {
+    "cell_type": "markdown",
+@@ -51,8 +54,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:44.312535Z",
+-     "start_time": "2024-01-13T19:07:44.275013Z"
++     "end_time": "2024-01-13T19:17:18.470317Z",
++     "start_time": "2024-01-13T19:17:18.437243Z"
+     }
+    },
+    "execution_count": 2
+@@ -73,7 +76,7 @@
+      "name": "stderr",
+      "output_type": "stream",
+      "text": [
+-      "/var/folders/z0/24mzs0z565s6qpzztgbdrj780000gn/T/ipykernel_44763/3884275055.py:4: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.\n",
++      "/var/folders/z0/24mzs0z565s6qpzztgbdrj780000gn/T/ipykernel_45049/3884275055.py:4: DtypeWarning: Columns (3) have mixed types. Specify dtype option on import or set low_memory=False.\n",
+       "  reviews_csv = pd.read_csv(\"reviews.csv\").copy()\n"
+      ]
+     }
+@@ -87,8 +90,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:44.684877Z",
+-     "start_time": "2024-01-13T19:07:44.277385Z"
++     "end_time": "2024-01-13T19:17:18.854375Z",
++     "start_time": "2024-01-13T19:17:18.439898Z"
+     }
+    },
+    "execution_count": 3
+@@ -112,8 +115,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:44.696208Z",
+-     "start_time": "2024-01-13T19:07:44.684786Z"
++     "end_time": "2024-01-13T19:17:18.968980Z",
++     "start_time": "2024-01-13T19:17:18.858342Z"
+     }
+    },
+    "execution_count": 4
+@@ -185,8 +188,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:44.859900Z",
+-     "start_time": "2024-01-13T19:07:44.697379Z"
++     "end_time": "2024-01-13T19:17:19.081472Z",
++     "start_time": "2024-01-13T19:17:18.864456Z"
+     }
+    },
+    "execution_count": 5
+@@ -280,8 +283,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:45.838413Z",
+-     "start_time": "2024-01-13T19:07:44.843680Z"
++     "end_time": "2024-01-13T19:17:20.010081Z",
++     "start_time": "2024-01-13T19:17:19.026344Z"
+     }
+    },
+    "execution_count": 6
+@@ -359,8 +362,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:45.937310Z",
+-     "start_time": "2024-01-13T19:07:45.836538Z"
++     "end_time": "2024-01-13T19:17:20.095586Z",
++     "start_time": "2024-01-13T19:17:20.008619Z"
+     }
+    },
+    "execution_count": 7
+@@ -427,8 +430,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.319041Z",
+-     "start_time": "2024-01-13T19:07:45.857297Z"
++     "end_time": "2024-01-13T19:17:20.511168Z",
++     "start_time": "2024-01-13T19:17:20.028479Z"
+     }
+    },
+    "execution_count": 8
+@@ -446,8 +449,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.359509Z",
+-     "start_time": "2024-01-13T19:07:46.319581Z"
++     "end_time": "2024-01-13T19:17:20.549423Z",
++     "start_time": "2024-01-13T19:17:20.496387Z"
+     }
+    },
+    "execution_count": 9
+@@ -500,8 +503,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.412759Z",
+-     "start_time": "2024-01-13T19:07:46.344797Z"
++     "end_time": "2024-01-13T19:17:20.617229Z",
++     "start_time": "2024-01-13T19:17:20.513995Z"
+     }
+    },
+    "execution_count": 10
+@@ -554,8 +557,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.495205Z",
+-     "start_time": "2024-01-13T19:07:46.411502Z"
++     "end_time": "2024-01-13T19:17:20.699983Z",
++     "start_time": "2024-01-13T19:17:20.583986Z"
+     }
+    },
+    "execution_count": 11
+@@ -608,8 +611,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.568430Z",
+-     "start_time": "2024-01-13T19:07:46.487123Z"
++     "end_time": "2024-01-13T19:17:20.772407Z",
++     "start_time": "2024-01-13T19:17:20.651482Z"
+     }
+    },
+    "execution_count": 12
+@@ -662,8 +665,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.637730Z",
+-     "start_time": "2024-01-13T19:07:46.554247Z"
++     "end_time": "2024-01-13T19:17:20.844413Z",
++     "start_time": "2024-01-13T19:17:20.717187Z"
+     }
+    },
+    "execution_count": 13
+@@ -716,8 +719,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.715304Z",
+-     "start_time": "2024-01-13T19:07:46.614816Z"
++     "end_time": "2024-01-13T19:17:20.910199Z",
++     "start_time": "2024-01-13T19:17:20.776028Z"
+     }
+    },
+    "execution_count": 14
+@@ -795,8 +798,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.727657Z",
+-     "start_time": "2024-01-13T19:07:46.715788Z"
++     "end_time": "2024-01-13T19:17:20.912260Z",
++     "start_time": "2024-01-13T19:17:20.873333Z"
+     }
+    },
+    "execution_count": 15
+@@ -831,8 +834,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:46.787622Z",
+-     "start_time": "2024-01-13T19:07:46.721592Z"
++     "end_time": "2024-01-13T19:17:20.925478Z",
++     "start_time": "2024-01-13T19:17:20.878968Z"
+     }
+    },
+    "execution_count": 16
+@@ -876,8 +879,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:47.056435Z",
+-     "start_time": "2024-01-13T19:07:46.741227Z"
++     "end_time": "2024-01-13T19:17:21.298264Z",
++     "start_time": "2024-01-13T19:17:20.898111Z"
+     }
+    },
+    "execution_count": 17
+@@ -921,8 +924,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:47.179155Z",
+-     "start_time": "2024-01-13T19:07:47.053116Z"
++     "end_time": "2024-01-13T19:17:21.342300Z",
++     "start_time": "2024-01-13T19:17:21.224172Z"
+     }
+    },
+    "execution_count": 18
+@@ -979,8 +982,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:47.447007Z",
+-     "start_time": "2024-01-13T19:07:47.079162Z"
++     "end_time": "2024-01-13T19:17:21.657573Z",
++     "start_time": "2024-01-13T19:17:21.252194Z"
+     }
+    },
+    "execution_count": 19
+@@ -1046,8 +1049,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:47.593722Z",
+-     "start_time": "2024-01-13T19:07:47.391628Z"
++     "end_time": "2024-01-13T19:17:21.734633Z",
++     "start_time": "2024-01-13T19:17:21.626305Z"
+     }
+    },
+    "execution_count": 20
+@@ -1110,8 +1113,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:47.934279Z",
+-     "start_time": "2024-01-13T19:07:47.554201Z"
++     "end_time": "2024-01-13T19:17:22.340842Z",
++     "start_time": "2024-01-13T19:17:21.709529Z"
+     }
+    },
+    "execution_count": 21
+@@ -1174,8 +1177,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:48.311084Z",
+-     "start_time": "2024-01-13T19:07:47.927574Z"
++     "end_time": "2024-01-13T19:17:22.507478Z",
++     "start_time": "2024-01-13T19:17:22.064146Z"
+     }
+    },
+    "execution_count": 22
+@@ -1244,8 +1247,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:48.322662Z",
+-     "start_time": "2024-01-13T19:07:48.310550Z"
++     "end_time": "2024-01-13T19:17:22.509585Z",
++     "start_time": "2024-01-13T19:17:22.481391Z"
+     }
+    },
+    "execution_count": 23
+@@ -1299,8 +1302,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:48.704158Z",
+-     "start_time": "2024-01-13T19:07:48.325092Z"
++     "end_time": "2024-01-13T19:17:22.907940Z",
++     "start_time": "2024-01-13T19:17:22.496029Z"
+     }
+    },
+    "execution_count": 24
+@@ -1363,8 +1366,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:49.097013Z",
+-     "start_time": "2024-01-13T19:07:48.700342Z"
++     "end_time": "2024-01-13T19:17:23.250952Z",
++     "start_time": "2024-01-13T19:17:22.907177Z"
+     }
+    },
+    "execution_count": 25
+@@ -1427,8 +1430,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:49.479990Z",
+-     "start_time": "2024-01-13T19:07:49.098206Z"
++     "end_time": "2024-01-13T19:17:23.637264Z",
++     "start_time": "2024-01-13T19:17:23.251115Z"
+     }
+    },
+    "execution_count": 26
+@@ -1491,8 +1494,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:49.878230Z",
+-     "start_time": "2024-01-13T19:07:49.479378Z"
++     "end_time": "2024-01-13T19:17:24.083615Z",
++     "start_time": "2024-01-13T19:17:23.636922Z"
+     }
+    },
+    "execution_count": 27
+@@ -1555,8 +1558,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:50.234846Z",
+-     "start_time": "2024-01-13T19:07:49.876997Z"
++     "end_time": "2024-01-13T19:17:24.469202Z",
++     "start_time": "2024-01-13T19:17:24.082923Z"
+     }
+    },
+    "execution_count": 28
+@@ -1619,8 +1622,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:50.748391Z",
+-     "start_time": "2024-01-13T19:07:50.235037Z"
++     "end_time": "2024-01-13T19:17:24.821719Z",
++     "start_time": "2024-01-13T19:17:24.467936Z"
+     }
+    },
+    "execution_count": 29
+@@ -1683,8 +1686,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:51.133146Z",
+-     "start_time": "2024-01-13T19:07:50.733392Z"
++     "end_time": "2024-01-13T19:17:25.298357Z",
++     "start_time": "2024-01-13T19:17:24.817647Z"
+     }
+    },
+    "execution_count": 30
+@@ -1763,8 +1766,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:51.498954Z",
+-     "start_time": "2024-01-13T19:07:51.132829Z"
++     "end_time": "2024-01-13T19:17:25.721286Z",
++     "start_time": "2024-01-13T19:17:25.294232Z"
+     }
+    },
+    "execution_count": 31
+@@ -1841,8 +1844,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:51.876410Z",
+-     "start_time": "2024-01-13T19:07:51.498303Z"
++     "end_time": "2024-01-13T19:17:26.052823Z",
++     "start_time": "2024-01-13T19:17:25.692874Z"
+     }
+    },
+    "execution_count": 32
+@@ -1864,8 +1867,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.005997Z",
+-     "start_time": "2024-01-13T19:07:51.871192Z"
++     "end_time": "2024-01-13T19:17:26.187989Z",
++     "start_time": "2024-01-13T19:17:26.066792Z"
+     }
+    },
+    "execution_count": 33
+@@ -1889,8 +1892,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.031810Z",
+-     "start_time": "2024-01-13T19:07:52.001819Z"
++     "end_time": "2024-01-13T19:17:26.212700Z",
++     "start_time": "2024-01-13T19:17:26.174300Z"
+     }
+    },
+    "execution_count": 34
+@@ -1924,8 +1927,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.122470Z",
+-     "start_time": "2024-01-13T19:07:52.022645Z"
++     "end_time": "2024-01-13T19:17:26.313257Z",
++     "start_time": "2024-01-13T19:17:26.194265Z"
+     }
+    },
+    "execution_count": 35
+@@ -1960,8 +1963,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.131498Z",
+-     "start_time": "2024-01-13T19:07:52.070049Z"
++     "end_time": "2024-01-13T19:17:26.322306Z",
++     "start_time": "2024-01-13T19:17:26.242899Z"
+     }
+    },
+    "execution_count": 36
+@@ -2004,8 +2007,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.133312Z",
+-     "start_time": "2024-01-13T19:07:52.079910Z"
++     "end_time": "2024-01-13T19:17:26.324128Z",
++     "start_time": "2024-01-13T19:17:26.254218Z"
+     }
+    },
+    "execution_count": 37
+@@ -2044,8 +2047,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.285484Z",
+-     "start_time": "2024-01-13T19:07:52.083512Z"
++     "end_time": "2024-01-13T19:17:26.478162Z",
++     "start_time": "2024-01-13T19:17:26.256946Z"
+     }
+    },
+    "execution_count": 38
+@@ -2069,8 +2072,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.313518Z",
+-     "start_time": "2024-01-13T19:07:52.283383Z"
++     "end_time": "2024-01-13T19:17:26.487734Z",
++     "start_time": "2024-01-13T19:17:26.445402Z"
+     }
+    },
+    "execution_count": 39
+@@ -2095,8 +2098,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.371505Z",
+-     "start_time": "2024-01-13T19:07:52.303939Z"
++     "end_time": "2024-01-13T19:17:26.489734Z",
++     "start_time": "2024-01-13T19:17:26.460698Z"
+     }
+    },
+    "execution_count": 40
+@@ -2123,8 +2126,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.376772Z",
+-     "start_time": "2024-01-13T19:07:52.309722Z"
++     "end_time": "2024-01-13T19:17:26.541568Z",
++     "start_time": "2024-01-13T19:17:26.465716Z"
+     }
+    },
+    "execution_count": 41
+@@ -2178,8 +2181,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.438611Z",
+-     "start_time": "2024-01-13T19:07:52.321763Z"
++     "end_time": "2024-01-13T19:17:26.608510Z",
++     "start_time": "2024-01-13T19:17:26.477454Z"
+     }
+    },
+    "execution_count": 42
+@@ -2211,8 +2214,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.521252Z",
+-     "start_time": "2024-01-13T19:07:52.393696Z"
++     "end_time": "2024-01-13T19:17:26.629533Z",
++     "start_time": "2024-01-13T19:17:26.549295Z"
+     }
+    },
+    "execution_count": 43
+@@ -2270,8 +2273,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.523247Z",
+-     "start_time": "2024-01-13T19:07:52.400930Z"
++     "end_time": "2024-01-13T19:17:26.632760Z",
++     "start_time": "2024-01-13T19:17:26.556672Z"
+     }
+    },
+    "execution_count": 44
+@@ -2326,8 +2329,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.659395Z",
+-     "start_time": "2024-01-13T19:07:52.409919Z"
++     "end_time": "2024-01-13T19:17:26.740860Z",
++     "start_time": "2024-01-13T19:17:26.570495Z"
+     }
+    },
+    "execution_count": 45
+@@ -2351,8 +2354,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.661740Z",
+-     "start_time": "2024-01-13T19:07:52.414825Z"
++     "end_time": "2024-01-13T19:17:26.742957Z",
++     "start_time": "2024-01-13T19:17:26.573985Z"
+     }
+    },
+    "execution_count": 46
+@@ -2387,8 +2390,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.663624Z",
+-     "start_time": "2024-01-13T19:07:52.424686Z"
++     "end_time": "2024-01-13T19:17:26.828993Z",
++     "start_time": "2024-01-13T19:17:26.582599Z"
+     }
+    },
+    "execution_count": 47
+@@ -2416,8 +2419,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.680059Z",
+-     "start_time": "2024-01-13T19:07:52.427422Z"
++     "end_time": "2024-01-13T19:17:26.831126Z",
++     "start_time": "2024-01-13T19:17:26.587288Z"
+     }
+    },
+    "execution_count": 48
+@@ -2498,8 +2501,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.681934Z",
+-     "start_time": "2024-01-13T19:07:52.429516Z"
++     "end_time": "2024-01-13T19:17:26.832949Z",
++     "start_time": "2024-01-13T19:17:26.590197Z"
+     }
+    },
+    "execution_count": 49
+@@ -2553,8 +2556,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.695786Z",
+-     "start_time": "2024-01-13T19:07:52.430753Z"
++     "end_time": "2024-01-13T19:17:26.837812Z",
++     "start_time": "2024-01-13T19:17:26.592340Z"
+     }
+    },
+    "execution_count": 50
+@@ -2613,8 +2616,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.697640Z",
+-     "start_time": "2024-01-13T19:07:52.440181Z"
++     "end_time": "2024-01-13T19:17:26.922899Z",
++     "start_time": "2024-01-13T19:17:26.603183Z"
+     }
+    },
+    "execution_count": 51
+@@ -2696,8 +2699,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.699361Z",
+-     "start_time": "2024-01-13T19:07:52.453849Z"
++     "end_time": "2024-01-13T19:17:26.924551Z",
++     "start_time": "2024-01-13T19:17:26.615452Z"
+     }
+    },
+    "execution_count": 52
+@@ -2756,8 +2759,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.701078Z",
+-     "start_time": "2024-01-13T19:07:52.459566Z"
++     "end_time": "2024-01-13T19:17:26.936023Z",
++     "start_time": "2024-01-13T19:17:26.621964Z"
+     }
+    },
+    "execution_count": 53
+@@ -2841,8 +2844,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.703018Z",
+-     "start_time": "2024-01-13T19:07:52.465389Z"
++     "end_time": "2024-01-13T19:17:26.961829Z",
++     "start_time": "2024-01-13T19:17:26.630177Z"
+     }
+    },
+    "execution_count": 54
+@@ -2926,8 +2929,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.710723Z",
+-     "start_time": "2024-01-13T19:07:52.474255Z"
++     "end_time": "2024-01-13T19:17:26.964126Z",
++     "start_time": "2024-01-13T19:17:26.639723Z"
+     }
+    },
+    "execution_count": 55
+@@ -3011,8 +3014,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.720488Z",
+-     "start_time": "2024-01-13T19:07:52.485667Z"
++     "end_time": "2024-01-13T19:17:27.107867Z",
++     "start_time": "2024-01-13T19:17:26.651402Z"
+     }
+    },
+    "execution_count": 56
+@@ -3096,8 +3099,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.831933Z",
+-     "start_time": "2024-01-13T19:07:52.497274Z"
++     "end_time": "2024-01-13T19:17:27.109690Z",
++     "start_time": "2024-01-13T19:17:26.662573Z"
+     }
+    },
+    "execution_count": 57
+@@ -3181,8 +3184,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.841459Z",
+-     "start_time": "2024-01-13T19:07:52.509699Z"
++     "end_time": "2024-01-13T19:17:27.111591Z",
++     "start_time": "2024-01-13T19:17:26.673627Z"
+     }
+    },
+    "execution_count": 58
+@@ -3266,8 +3269,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.855030Z",
+-     "start_time": "2024-01-13T19:07:52.522762Z"
++     "end_time": "2024-01-13T19:17:27.144875Z",
++     "start_time": "2024-01-13T19:17:26.687002Z"
+     }
+    },
+    "execution_count": 59
+@@ -3351,8 +3354,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:52.856732Z",
+-     "start_time": "2024-01-13T19:07:52.534164Z"
++     "end_time": "2024-01-13T19:17:27.146658Z",
++     "start_time": "2024-01-13T19:17:26.698071Z"
+     }
+    },
+    "execution_count": 60
+@@ -3436,8 +3439,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.001047Z",
+-     "start_time": "2024-01-13T19:07:52.546715Z"
++     "end_time": "2024-01-13T19:17:27.148262Z",
++     "start_time": "2024-01-13T19:17:26.708831Z"
+     }
+    },
+    "execution_count": 61
+@@ -3521,8 +3524,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.002878Z",
+-     "start_time": "2024-01-13T19:07:52.559312Z"
++     "end_time": "2024-01-13T19:17:27.149774Z",
++     "start_time": "2024-01-13T19:17:26.720273Z"
+     }
+    },
+    "execution_count": 62
+@@ -3606,8 +3609,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.004558Z",
+-     "start_time": "2024-01-13T19:07:52.570868Z"
++     "end_time": "2024-01-13T19:17:27.161239Z",
++     "start_time": "2024-01-13T19:17:26.731169Z"
+     }
+    },
+    "execution_count": 63
+@@ -3698,8 +3701,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.017242Z",
+-     "start_time": "2024-01-13T19:07:52.582183Z"
++     "end_time": "2024-01-13T19:17:27.175342Z",
++     "start_time": "2024-01-13T19:17:26.742134Z"
+     }
+    },
+    "execution_count": 64
+@@ -3722,8 +3725,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.018938Z",
+-     "start_time": "2024-01-13T19:07:52.591513Z"
++     "end_time": "2024-01-13T19:17:27.176955Z",
++     "start_time": "2024-01-13T19:17:26.752016Z"
+     }
+    },
+    "execution_count": 65
+@@ -3749,8 +3752,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.020913Z",
+-     "start_time": "2024-01-13T19:07:52.613183Z"
++     "end_time": "2024-01-13T19:17:27.178561Z",
++     "start_time": "2024-01-13T19:17:26.773713Z"
+     }
+    },
+    "execution_count": 66
+@@ -3760,8 +3763,8 @@
+    "outputs": [
+     {
+      "data": {
+-      "text/plain": "      CustomerId  RecipeId   Like        Diet  Age      MaxTime HighCalories  \\\n0       1000036C    320576  False  Vegetarian   50   119.024930          0.0   \n1       1000216B    189335  False  Vegetarian   78  1199.386790          0.0   \n2       1000221A    133043  False  Vegetarian   25   362.152341          0.0   \n3       1000221A     90537  False  Vegetarian   25  1198.957497          0.0   \n4       1000221A    334314  False  Vegetarian   25  5400.036634          1.0   \n...          ...       ...    ...         ...  ...          ...          ...   \n97376    999595E    338070  False  Vegetarian   31  3899.421310          0.0   \n97377    999774A     29002  False  Vegetarian   57  2402.372535          0.0   \n97378    999774A    159252  False  Vegetarian   57  5999.598903          0.0   \n97379    999774A      1171   True  Vegetarian   57   480.233207          1.0   \n97380    999917E    169413  False  Vegetarian   28  3600.387748          0.0   \n\n       HighProtein LowFat     LowSugar HighFiber  \n0      Indifferent      0  Indifferent         1  \n1              Yes      0            0         1  \n2              Yes      0  Indifferent         1  \n3              Yes      0            0         1  \n4      Indifferent      0            0         0  \n...            ...    ...          ...       ...  \n97376  Indifferent      1  Indifferent         0  \n97377  Indifferent      0  Indifferent         0  \n97378          Yes      0            0         0  \n97379          Yes      0            0         0  \n97380  Indifferent      0  Indifferent         0  \n\n[97381 rows x 11 columns]",
+-      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>CustomerId</th>\n      <th>RecipeId</th>\n      <th>Like</th>\n      <th>Diet</th>\n      <th>Age</th>\n      <th>MaxTime</th>\n      <th>HighCalories</th>\n      <th>HighProtein</th>\n      <th>LowFat</th>\n      <th>LowSugar</th>\n      <th>HighFiber</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1000036C</td>\n      <td>320576</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>50</td>\n      <td>119.024930</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1000216B</td>\n      <td>189335</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>78</td>\n      <td>1199.386790</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1000221A</td>\n      <td>133043</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>362.152341</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1000221A</td>\n      <td>90537</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>1198.957497</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1000221A</td>\n      <td>334314</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>5400.036634</td>\n      <td>1.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>...</th>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n    </tr>\n    <tr>\n      <th>97376</th>\n      <td>999595E</td>\n      <td>338070</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>31</td>\n      <td>3899.421310</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n      <td>Indifferent</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97377</th>\n      <td>999774A</td>\n      <td>29002</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>2402.372535</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97378</th>\n      <td>999774A</td>\n      <td>159252</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>5999.598903</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97379</th>\n      <td>999774A</td>\n      <td>1171</td>\n      <td>True</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>480.233207</td>\n      <td>1.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97380</th>\n      <td>999917E</td>\n      <td>169413</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>28</td>\n      <td>3600.387748</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n<p>97381 rows × 11 columns</p>\n</div>"
++      "text/plain": "      CustomerId  RecipeId   Like        Diet  Age      MaxTime HighCalories  \\\n0       1000036C    320576  False  Vegetarian   50   119.024930            0   \n1       1000216B    189335  False  Vegetarian   78  1199.386790            0   \n2       1000221A    133043  False  Vegetarian   25   362.152341            0   \n3       1000221A     90537  False  Vegetarian   25  1198.957497            0   \n4       1000221A    334314  False  Vegetarian   25  5400.036634            1   \n...          ...       ...    ...         ...  ...          ...          ...   \n97376    999595E    338070  False  Vegetarian   31  3899.421310            0   \n97377    999774A     29002  False  Vegetarian   57  2402.372535            0   \n97378    999774A    159252  False  Vegetarian   57  5999.598903            0   \n97379    999774A      1171   True  Vegetarian   57   480.233207            1   \n97380    999917E    169413  False  Vegetarian   28  3600.387748            0   \n\n      HighProtein LowFat LowSugar HighFiber  \n0               0      0        0         1  \n1               1      0        0         1  \n2               1      0        0         1  \n3               1      0        0         1  \n4               0      0        0         0  \n...           ...    ...      ...       ...  \n97376           0      1        0         0  \n97377           0      0        0         0  \n97378           1      0        0         0  \n97379           1      0        0         0  \n97380           0      0        0         0  \n\n[97381 rows x 11 columns]",
++      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>CustomerId</th>\n      <th>RecipeId</th>\n      <th>Like</th>\n      <th>Diet</th>\n      <th>Age</th>\n      <th>MaxTime</th>\n      <th>HighCalories</th>\n      <th>HighProtein</th>\n      <th>LowFat</th>\n      <th>LowSugar</th>\n      <th>HighFiber</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1000036C</td>\n      <td>320576</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>50</td>\n      <td>119.024930</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1000216B</td>\n      <td>189335</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>78</td>\n      <td>1199.386790</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1000221A</td>\n      <td>133043</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>362.152341</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1000221A</td>\n      <td>90537</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>1198.957497</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1000221A</td>\n      <td>334314</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>25</td>\n      <td>5400.036634</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>...</th>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n    </tr>\n    <tr>\n      <th>97376</th>\n      <td>999595E</td>\n      <td>338070</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>31</td>\n      <td>3899.421310</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97377</th>\n      <td>999774A</td>\n      <td>29002</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>2402.372535</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97378</th>\n      <td>999774A</td>\n      <td>159252</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>5999.598903</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97379</th>\n      <td>999774A</td>\n      <td>1171</td>\n      <td>True</td>\n      <td>Vegetarian</td>\n      <td>57</td>\n      <td>480.233207</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n    <tr>\n      <th>97380</th>\n      <td>999917E</td>\n      <td>169413</td>\n      <td>False</td>\n      <td>Vegetarian</td>\n      <td>28</td>\n      <td>3600.387748</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n    </tr>\n  </tbody>\n</table>\n<p>97381 rows × 11 columns</p>\n</div>"
+      },
+      "execution_count": 67,
+      "metadata": {},
+@@ -3774,8 +3777,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.022793Z",
+-     "start_time": "2024-01-13T19:07:52.647099Z"
++     "end_time": "2024-01-13T19:17:27.181145Z",
++     "start_time": "2024-01-13T19:17:26.801228Z"
+     }
+    },
+    "execution_count": 67
+@@ -3790,8 +3793,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.069752Z",
+-     "start_time": "2024-01-13T19:07:52.649865Z"
++     "end_time": "2024-01-13T19:17:27.203364Z",
++     "start_time": "2024-01-13T19:17:26.807158Z"
+     }
+    },
+    "execution_count": 68
+@@ -3806,8 +3809,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.079718Z",
+-     "start_time": "2024-01-13T19:07:52.700594Z"
++     "end_time": "2024-01-13T19:17:27.205046Z",
++     "start_time": "2024-01-13T19:17:26.855799Z"
+     }
+    },
+    "execution_count": 69
+@@ -3817,8 +3820,8 @@
+    "outputs": [
+     {
+      "data": {
+-      "text/plain": "      CustomerId  RecipeId   Like  Age      MaxTime HighCalories  HighProtein  \\\n0       1000036C    320576  False   50   119.024930          0.0  Indifferent   \n1       1000216B    189335  False   78  1199.386790          0.0          Yes   \n2       1000221A    133043  False   25   362.152341          0.0          Yes   \n3       1000221A     90537  False   25  1198.957497          0.0          Yes   \n4       1000221A    334314  False   25  5400.036634          1.0  Indifferent   \n...          ...       ...    ...  ...          ...          ...          ...   \n97376    999595E    338070  False   31  3899.421310          0.0  Indifferent   \n97377    999774A     29002  False   57  2402.372535          0.0  Indifferent   \n97378    999774A    159252  False   57  5999.598903          0.0          Yes   \n97379    999774A      1171   True   57   480.233207          1.0          Yes   \n97380    999917E    169413  False   28  3600.387748          0.0  Indifferent   \n\n      LowFat     LowSugar HighFiber  ... RecipeServings   RecipeYield  \\\n0          0  Indifferent         1  ...       1.000000           NaN   \n1          0            0         1  ...       8.000000           NaN   \n2          0  Indifferent         1  ...       8.828455      4 ounces   \n3          0            0         1  ...       1.000000           NaN   \n4          0            0         0  ...       8.828455  1 large loaf   \n...      ...          ...       ...  ...            ...           ...   \n97376      1  Indifferent         0  ...      16.000000           NaN   \n97377      0  Indifferent         0  ...       4.000000           NaN   \n97378      0            0         0  ...       8.828455        4 cups   \n97379      0            0         0  ...       1.000000        2 mugs   \n97380      0  Indifferent         0  ...       8.000000           NaN   \n\n       Diet_Vegan Diet_Vegetarian RecipeCategory_Bread  \\\n0           False            True                False   \n1           False            True                False   \n2           False            True                False   \n3           False            True                False   \n4           False            True                 True   \n...           ...             ...                  ...   \n97376       False            True                False   \n97377       False            True                False   \n97378       False            True                False   \n97379       False            True                False   \n97380       False            True                 True   \n\n       RecipeCategory_Breakfast  RecipeCategory_Lunch  \\\n0                         False                 False   \n1                         False                 False   \n2                         False                 False   \n3                          True                 False   \n4                         False                 False   \n...                         ...                   ...   \n97376                     False                 False   \n97377                     False                 False   \n97378                     False                 False   \n97379                     False                 False   \n97380                     False                 False   \n\n       RecipeCategory_One dish meal  RecipeCategory_Other  RecipeCategory_Soup  \n0                             False                 False                False  \n1                             False                  True                False  \n2                             False                  True                False  \n3                             False                 False                False  \n4                             False                 False                False  \n...                             ...                   ...                  ...  \n97376                         False                  True                False  \n97377                         False                  True                False  \n97378                         False                  True                False  \n97379                         False                 False                False  \n97380                         False                 False                False  \n\n[97381 rows x 34 columns]",
+-      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>CustomerId</th>\n      <th>RecipeId</th>\n      <th>Like</th>\n      <th>Age</th>\n      <th>MaxTime</th>\n      <th>HighCalories</th>\n      <th>HighProtein</th>\n      <th>LowFat</th>\n      <th>LowSugar</th>\n      <th>HighFiber</th>\n      <th>...</th>\n      <th>RecipeServings</th>\n      <th>RecipeYield</th>\n      <th>Diet_Vegan</th>\n      <th>Diet_Vegetarian</th>\n      <th>RecipeCategory_Bread</th>\n      <th>RecipeCategory_Breakfast</th>\n      <th>RecipeCategory_Lunch</th>\n      <th>RecipeCategory_One dish meal</th>\n      <th>RecipeCategory_Other</th>\n      <th>RecipeCategory_Soup</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1000036C</td>\n      <td>320576</td>\n      <td>False</td>\n      <td>50</td>\n      <td>119.024930</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1000216B</td>\n      <td>189335</td>\n      <td>False</td>\n      <td>78</td>\n      <td>1199.386790</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>8.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1000221A</td>\n      <td>133043</td>\n      <td>False</td>\n      <td>25</td>\n      <td>362.152341</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>4 ounces</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1000221A</td>\n      <td>90537</td>\n      <td>False</td>\n      <td>25</td>\n      <td>1198.957497</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1000221A</td>\n      <td>334314</td>\n      <td>False</td>\n      <td>25</td>\n      <td>5400.036634</td>\n      <td>1.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>1 large loaf</td>\n      <td>False</td>\n      <td>True</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>...</th>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n    </tr>\n    <tr>\n      <th>97376</th>\n      <td>999595E</td>\n      <td>338070</td>\n      <td>False</td>\n      <td>31</td>\n      <td>3899.421310</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>1</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>...</td>\n      <td>16.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97377</th>\n      <td>999774A</td>\n      <td>29002</td>\n      <td>False</td>\n      <td>57</td>\n      <td>2402.372535</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>...</td>\n      <td>4.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97378</th>\n      <td>999774A</td>\n      <td>159252</td>\n      <td>False</td>\n      <td>57</td>\n      <td>5999.598903</td>\n      <td>0.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>4 cups</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97379</th>\n      <td>999774A</td>\n      <td>1171</td>\n      <td>True</td>\n      <td>57</td>\n      <td>480.233207</td>\n      <td>1.0</td>\n      <td>Yes</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>2 mugs</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97380</th>\n      <td>999917E</td>\n      <td>169413</td>\n      <td>False</td>\n      <td>28</td>\n      <td>3600.387748</td>\n      <td>0.0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>Indifferent</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n  </tbody>\n</table>\n<p>97381 rows × 34 columns</p>\n</div>"
++      "text/plain": "      CustomerId  RecipeId   Like  Age      MaxTime HighCalories HighProtein  \\\n0       1000036C    320576  False   50   119.024930            0           0   \n1       1000216B    189335  False   78  1199.386790            0           1   \n2       1000221A    133043  False   25   362.152341            0           1   \n3       1000221A     90537  False   25  1198.957497            0           1   \n4       1000221A    334314  False   25  5400.036634            1           0   \n...          ...       ...    ...  ...          ...          ...         ...   \n97376    999595E    338070  False   31  3899.421310            0           0   \n97377    999774A     29002  False   57  2402.372535            0           0   \n97378    999774A    159252  False   57  5999.598903            0           1   \n97379    999774A      1171   True   57   480.233207            1           1   \n97380    999917E    169413  False   28  3600.387748            0           0   \n\n      LowFat LowSugar HighFiber  ... RecipeServings   RecipeYield  Diet_Vegan  \\\n0          0        0         1  ...       1.000000           NaN       False   \n1          0        0         1  ...       8.000000           NaN       False   \n2          0        0         1  ...       8.828455      4 ounces       False   \n3          0        0         1  ...       1.000000           NaN       False   \n4          0        0         0  ...       8.828455  1 large loaf       False   \n...      ...      ...       ...  ...            ...           ...         ...   \n97376      1        0         0  ...      16.000000           NaN       False   \n97377      0        0         0  ...       4.000000           NaN       False   \n97378      0        0         0  ...       8.828455        4 cups       False   \n97379      0        0         0  ...       1.000000        2 mugs       False   \n97380      0        0         0  ...       8.000000           NaN       False   \n\n      Diet_Vegetarian RecipeCategory_Bread  RecipeCategory_Breakfast  \\\n0                True                False                     False   \n1                True                False                     False   \n2                True                False                     False   \n3                True                False                      True   \n4                True                 True                     False   \n...               ...                  ...                       ...   \n97376            True                False                     False   \n97377            True                False                     False   \n97378            True                False                     False   \n97379            True                False                     False   \n97380            True                 True                     False   \n\n       RecipeCategory_Lunch  RecipeCategory_One dish meal  \\\n0                     False                         False   \n1                     False                         False   \n2                     False                         False   \n3                     False                         False   \n4                     False                         False   \n...                     ...                           ...   \n97376                 False                         False   \n97377                 False                         False   \n97378                 False                         False   \n97379                 False                         False   \n97380                 False                         False   \n\n       RecipeCategory_Other  RecipeCategory_Soup  \n0                     False                False  \n1                      True                False  \n2                      True                False  \n3                     False                False  \n4                     False                False  \n...                     ...                  ...  \n97376                  True                False  \n97377                  True                False  \n97378                  True                False  \n97379                 False                False  \n97380                 False                False  \n\n[97381 rows x 34 columns]",
++      "text/html": "<div>\n<style scoped>\n    .dataframe tbody tr th:only-of-type {\n        vertical-align: middle;\n    }\n\n    .dataframe tbody tr th {\n        vertical-align: top;\n    }\n\n    .dataframe thead th {\n        text-align: right;\n    }\n</style>\n<table border=\"1\" class=\"dataframe\">\n  <thead>\n    <tr style=\"text-align: right;\">\n      <th></th>\n      <th>CustomerId</th>\n      <th>RecipeId</th>\n      <th>Like</th>\n      <th>Age</th>\n      <th>MaxTime</th>\n      <th>HighCalories</th>\n      <th>HighProtein</th>\n      <th>LowFat</th>\n      <th>LowSugar</th>\n      <th>HighFiber</th>\n      <th>...</th>\n      <th>RecipeServings</th>\n      <th>RecipeYield</th>\n      <th>Diet_Vegan</th>\n      <th>Diet_Vegetarian</th>\n      <th>RecipeCategory_Bread</th>\n      <th>RecipeCategory_Breakfast</th>\n      <th>RecipeCategory_Lunch</th>\n      <th>RecipeCategory_One dish meal</th>\n      <th>RecipeCategory_Other</th>\n      <th>RecipeCategory_Soup</th>\n    </tr>\n  </thead>\n  <tbody>\n    <tr>\n      <th>0</th>\n      <td>1000036C</td>\n      <td>320576</td>\n      <td>False</td>\n      <td>50</td>\n      <td>119.024930</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>1</th>\n      <td>1000216B</td>\n      <td>189335</td>\n      <td>False</td>\n      <td>78</td>\n      <td>1199.386790</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>8.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>2</th>\n      <td>1000221A</td>\n      <td>133043</td>\n      <td>False</td>\n      <td>25</td>\n      <td>362.152341</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>4 ounces</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>3</th>\n      <td>1000221A</td>\n      <td>90537</td>\n      <td>False</td>\n      <td>25</td>\n      <td>1198.957497</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>4</th>\n      <td>1000221A</td>\n      <td>334314</td>\n      <td>False</td>\n      <td>25</td>\n      <td>5400.036634</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>1 large loaf</td>\n      <td>False</td>\n      <td>True</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>...</th>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n      <td>...</td>\n    </tr>\n    <tr>\n      <th>97376</th>\n      <td>999595E</td>\n      <td>338070</td>\n      <td>False</td>\n      <td>31</td>\n      <td>3899.421310</td>\n      <td>0</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>16.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97377</th>\n      <td>999774A</td>\n      <td>29002</td>\n      <td>False</td>\n      <td>57</td>\n      <td>2402.372535</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>4.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97378</th>\n      <td>999774A</td>\n      <td>159252</td>\n      <td>False</td>\n      <td>57</td>\n      <td>5999.598903</td>\n      <td>0</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.828455</td>\n      <td>4 cups</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97379</th>\n      <td>999774A</td>\n      <td>1171</td>\n      <td>True</td>\n      <td>57</td>\n      <td>480.233207</td>\n      <td>1</td>\n      <td>1</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>1.000000</td>\n      <td>2 mugs</td>\n      <td>False</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n    <tr>\n      <th>97380</th>\n      <td>999917E</td>\n      <td>169413</td>\n      <td>False</td>\n      <td>28</td>\n      <td>3600.387748</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>0</td>\n      <td>...</td>\n      <td>8.000000</td>\n      <td>NaN</td>\n      <td>False</td>\n      <td>True</td>\n      <td>True</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n      <td>False</td>\n    </tr>\n  </tbody>\n</table>\n<p>97381 rows × 34 columns</p>\n</div>"
+      },
+      "execution_count": 70,
+      "metadata": {},
+@@ -3831,8 +3834,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.088177Z",
+-     "start_time": "2024-01-13T19:07:52.702972Z"
++     "end_time": "2024-01-13T19:17:27.207105Z",
++     "start_time": "2024-01-13T19:17:26.858369Z"
+     }
+    },
+    "execution_count": 70
+@@ -3853,8 +3856,8 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.097164Z",
+-     "start_time": "2024-01-13T19:07:52.715794Z"
++     "end_time": "2024-01-13T19:17:27.217604Z",
++     "start_time": "2024-01-13T19:17:26.870047Z"
+     }
+    },
+    "execution_count": 71
+@@ -3863,30 +3866,10 @@
+    "cell_type": "code",
+    "outputs": [
+     {
+-     "ename": "ValueError",
+-     "evalue": "Cannot cast object dtype to float32",
+-     "output_type": "error",
+-     "traceback": [
+-      "\u001B[0;31m---------------------------------------------------------------------------\u001B[0m",
+-      "\u001B[0;31mValueError\u001B[0m                                Traceback (most recent call last)",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/arrays/categorical.py:564\u001B[0m, in \u001B[0;36mCategorical.astype\u001B[0;34m(self, dtype, copy)\u001B[0m\n\u001B[1;32m    563\u001B[0m \u001B[38;5;28;01mtry\u001B[39;00m:\n\u001B[0;32m--> 564\u001B[0m     new_cats \u001B[38;5;241m=\u001B[39m \u001B[43mnew_cats\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mastype\u001B[49m\u001B[43m(\u001B[49m\u001B[43mdtype\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    565\u001B[0m     fill_value \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39mcategories\u001B[38;5;241m.\u001B[39m_na_value\n",
+-      "\u001B[0;31mValueError\u001B[0m: could not convert string to float: 'Indifferent'",
+-      "\nDuring handling of the above exception, another exception occurred:\n",
+-      "\u001B[0;31mValueError\u001B[0m                                Traceback (most recent call last)",
+-      "Cell \u001B[0;32mIn[72], line 4\u001B[0m\n\u001B[1;32m      1\u001B[0m \u001B[38;5;28;01mfrom\u001B[39;00m \u001B[38;5;21;01msklearn\u001B[39;00m\u001B[38;5;21;01m.\u001B[39;00m\u001B[38;5;21;01mtree\u001B[39;00m \u001B[38;5;28;01mimport\u001B[39;00m DecisionTreeClassifier\n\u001B[1;32m      3\u001B[0m model \u001B[38;5;241m=\u001B[39m DecisionTreeClassifier(max_depth\u001B[38;5;241m=\u001B[39m\u001B[38;5;241m31\u001B[39m,min_samples_leaf\u001B[38;5;241m=\u001B[39m \u001B[38;5;241m5\u001B[39m,random_state\u001B[38;5;241m=\u001B[39m\u001B[38;5;241m2024\u001B[39m)\n\u001B[0;32m----> 4\u001B[0m \u001B[43mmodel\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mfit\u001B[49m\u001B[43m(\u001B[49m\u001B[43mX_train\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43my_train\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m      5\u001B[0m min_samples_split_value \u001B[38;5;241m=\u001B[39m model\u001B[38;5;241m.\u001B[39mmin_samples_split\n\u001B[1;32m      6\u001B[0m \u001B[38;5;28mprint\u001B[39m(\u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mmin_samples_split:\u001B[39m\u001B[38;5;124m\"\u001B[39m, min_samples_split_value)\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/base.py:1152\u001B[0m, in \u001B[0;36m_fit_context.<locals>.decorator.<locals>.wrapper\u001B[0;34m(estimator, *args, **kwargs)\u001B[0m\n\u001B[1;32m   1145\u001B[0m     estimator\u001B[38;5;241m.\u001B[39m_validate_params()\n\u001B[1;32m   1147\u001B[0m \u001B[38;5;28;01mwith\u001B[39;00m config_context(\n\u001B[1;32m   1148\u001B[0m     skip_parameter_validation\u001B[38;5;241m=\u001B[39m(\n\u001B[1;32m   1149\u001B[0m         prefer_skip_nested_validation \u001B[38;5;129;01mor\u001B[39;00m global_skip_validation\n\u001B[1;32m   1150\u001B[0m     )\n\u001B[1;32m   1151\u001B[0m ):\n\u001B[0;32m-> 1152\u001B[0m     \u001B[38;5;28;01mreturn\u001B[39;00m \u001B[43mfit_method\u001B[49m\u001B[43m(\u001B[49m\u001B[43mestimator\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[43margs\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[43mkwargs\u001B[49m\u001B[43m)\u001B[49m\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/tree/_classes.py:959\u001B[0m, in \u001B[0;36mDecisionTreeClassifier.fit\u001B[0;34m(self, X, y, sample_weight, check_input)\u001B[0m\n\u001B[1;32m    928\u001B[0m \u001B[38;5;129m@_fit_context\u001B[39m(prefer_skip_nested_validation\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mTrue\u001B[39;00m)\n\u001B[1;32m    929\u001B[0m \u001B[38;5;28;01mdef\u001B[39;00m \u001B[38;5;21mfit\u001B[39m(\u001B[38;5;28mself\u001B[39m, X, y, sample_weight\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mNone\u001B[39;00m, check_input\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mTrue\u001B[39;00m):\n\u001B[1;32m    930\u001B[0m \u001B[38;5;250m    \u001B[39m\u001B[38;5;124;03m\"\"\"Build a decision tree classifier from the training set (X, y).\u001B[39;00m\n\u001B[1;32m    931\u001B[0m \n\u001B[1;32m    932\u001B[0m \u001B[38;5;124;03m    Parameters\u001B[39;00m\n\u001B[0;32m   (...)\u001B[0m\n\u001B[1;32m    956\u001B[0m \u001B[38;5;124;03m        Fitted estimator.\u001B[39;00m\n\u001B[1;32m    957\u001B[0m \u001B[38;5;124;03m    \"\"\"\u001B[39;00m\n\u001B[0;32m--> 959\u001B[0m     \u001B[38;5;28;43msuper\u001B[39;49m\u001B[43m(\u001B[49m\u001B[43m)\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43m_fit\u001B[49m\u001B[43m(\u001B[49m\n\u001B[1;32m    960\u001B[0m \u001B[43m        \u001B[49m\u001B[43mX\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    961\u001B[0m \u001B[43m        \u001B[49m\u001B[43my\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    962\u001B[0m \u001B[43m        \u001B[49m\u001B[43msample_weight\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43msample_weight\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    963\u001B[0m \u001B[43m        \u001B[49m\u001B[43mcheck_input\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcheck_input\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    964\u001B[0m \u001B[43m    \u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    965\u001B[0m     \u001B[38;5;28;01mreturn\u001B[39;00m \u001B[38;5;28mself\u001B[39m\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/tree/_classes.py:242\u001B[0m, in \u001B[0;36mBaseDecisionTree._fit\u001B[0;34m(self, X, y, sample_weight, check_input, missing_values_in_feature_mask)\u001B[0m\n\u001B[1;32m    238\u001B[0m check_X_params \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mdict\u001B[39m(\n\u001B[1;32m    239\u001B[0m     dtype\u001B[38;5;241m=\u001B[39mDTYPE, accept_sparse\u001B[38;5;241m=\u001B[39m\u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mcsc\u001B[39m\u001B[38;5;124m\"\u001B[39m, force_all_finite\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mFalse\u001B[39;00m\n\u001B[1;32m    240\u001B[0m )\n\u001B[1;32m    241\u001B[0m check_y_params \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mdict\u001B[39m(ensure_2d\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mFalse\u001B[39;00m, dtype\u001B[38;5;241m=\u001B[39m\u001B[38;5;28;01mNone\u001B[39;00m)\n\u001B[0;32m--> 242\u001B[0m X, y \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;43mself\u001B[39;49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43m_validate_data\u001B[49m\u001B[43m(\u001B[49m\n\u001B[1;32m    243\u001B[0m \u001B[43m    \u001B[49m\u001B[43mX\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43my\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mvalidate_separately\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43m(\u001B[49m\u001B[43mcheck_X_params\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcheck_y_params\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    244\u001B[0m \u001B[43m\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    246\u001B[0m missing_values_in_feature_mask \u001B[38;5;241m=\u001B[39m (\n\u001B[1;32m    247\u001B[0m     \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39m_compute_missing_values_in_feature_mask(X)\n\u001B[1;32m    248\u001B[0m )\n\u001B[1;32m    249\u001B[0m \u001B[38;5;28;01mif\u001B[39;00m issparse(X):\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/base.py:617\u001B[0m, in \u001B[0;36mBaseEstimator._validate_data\u001B[0;34m(self, X, y, reset, validate_separately, cast_to_ndarray, **check_params)\u001B[0m\n\u001B[1;32m    615\u001B[0m \u001B[38;5;28;01mif\u001B[39;00m \u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mestimator\u001B[39m\u001B[38;5;124m\"\u001B[39m \u001B[38;5;129;01mnot\u001B[39;00m \u001B[38;5;129;01min\u001B[39;00m check_X_params:\n\u001B[1;32m    616\u001B[0m     check_X_params \u001B[38;5;241m=\u001B[39m {\u001B[38;5;241m*\u001B[39m\u001B[38;5;241m*\u001B[39mdefault_check_params, \u001B[38;5;241m*\u001B[39m\u001B[38;5;241m*\u001B[39mcheck_X_params}\n\u001B[0;32m--> 617\u001B[0m X \u001B[38;5;241m=\u001B[39m \u001B[43mcheck_array\u001B[49m\u001B[43m(\u001B[49m\u001B[43mX\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43minput_name\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[38;5;124;43m\"\u001B[39;49m\u001B[38;5;124;43mX\u001B[39;49m\u001B[38;5;124;43m\"\u001B[39;49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[43mcheck_X_params\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    618\u001B[0m \u001B[38;5;28;01mif\u001B[39;00m \u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mestimator\u001B[39m\u001B[38;5;124m\"\u001B[39m \u001B[38;5;129;01mnot\u001B[39;00m \u001B[38;5;129;01min\u001B[39;00m check_y_params:\n\u001B[1;32m    619\u001B[0m     check_y_params \u001B[38;5;241m=\u001B[39m {\u001B[38;5;241m*\u001B[39m\u001B[38;5;241m*\u001B[39mdefault_check_params, \u001B[38;5;241m*\u001B[39m\u001B[38;5;241m*\u001B[39mcheck_y_params}\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/sklearn/utils/validation.py:836\u001B[0m, in \u001B[0;36mcheck_array\u001B[0;34m(array, accept_sparse, accept_large_sparse, dtype, order, copy, force_all_finite, ensure_2d, allow_nd, ensure_min_samples, ensure_min_features, estimator, input_name)\u001B[0m\n\u001B[1;32m    831\u001B[0m \u001B[38;5;28;01mif\u001B[39;00m pandas_requires_conversion:\n\u001B[1;32m    832\u001B[0m     \u001B[38;5;66;03m# pandas dataframe requires conversion earlier to handle extension dtypes with\u001B[39;00m\n\u001B[1;32m    833\u001B[0m     \u001B[38;5;66;03m# nans\u001B[39;00m\n\u001B[1;32m    834\u001B[0m     \u001B[38;5;66;03m# Use the original dtype for conversion if dtype is None\u001B[39;00m\n\u001B[1;32m    835\u001B[0m     new_dtype \u001B[38;5;241m=\u001B[39m dtype_orig \u001B[38;5;28;01mif\u001B[39;00m dtype \u001B[38;5;129;01mis\u001B[39;00m \u001B[38;5;28;01mNone\u001B[39;00m \u001B[38;5;28;01melse\u001B[39;00m dtype\n\u001B[0;32m--> 836\u001B[0m     array \u001B[38;5;241m=\u001B[39m \u001B[43marray\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mastype\u001B[49m\u001B[43m(\u001B[49m\u001B[43mnew_dtype\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    837\u001B[0m     \u001B[38;5;66;03m# Since we converted here, we do not need to convert again later\u001B[39;00m\n\u001B[1;32m    838\u001B[0m     dtype \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;01mNone\u001B[39;00m\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/generic.py:6534\u001B[0m, in \u001B[0;36mNDFrame.astype\u001B[0;34m(self, dtype, copy, errors)\u001B[0m\n\u001B[1;32m   6530\u001B[0m     results \u001B[38;5;241m=\u001B[39m [ser\u001B[38;5;241m.\u001B[39mastype(dtype, copy\u001B[38;5;241m=\u001B[39mcopy) \u001B[38;5;28;01mfor\u001B[39;00m _, ser \u001B[38;5;129;01min\u001B[39;00m \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39mitems()]\n\u001B[1;32m   6532\u001B[0m \u001B[38;5;28;01melse\u001B[39;00m:\n\u001B[1;32m   6533\u001B[0m     \u001B[38;5;66;03m# else, only a single dtype is given\u001B[39;00m\n\u001B[0;32m-> 6534\u001B[0m     new_data \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;43mself\u001B[39;49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43m_mgr\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mastype\u001B[49m\u001B[43m(\u001B[49m\u001B[43mdtype\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43merrors\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43merrors\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m   6535\u001B[0m     res \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39m_constructor_from_mgr(new_data, axes\u001B[38;5;241m=\u001B[39mnew_data\u001B[38;5;241m.\u001B[39maxes)\n\u001B[1;32m   6536\u001B[0m     \u001B[38;5;28;01mreturn\u001B[39;00m res\u001B[38;5;241m.\u001B[39m__finalize__(\u001B[38;5;28mself\u001B[39m, method\u001B[38;5;241m=\u001B[39m\u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mastype\u001B[39m\u001B[38;5;124m\"\u001B[39m)\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/internals/managers.py:414\u001B[0m, in \u001B[0;36mBaseBlockManager.astype\u001B[0;34m(self, dtype, copy, errors)\u001B[0m\n\u001B[1;32m    411\u001B[0m \u001B[38;5;28;01melif\u001B[39;00m using_copy_on_write():\n\u001B[1;32m    412\u001B[0m     copy \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;01mFalse\u001B[39;00m\n\u001B[0;32m--> 414\u001B[0m \u001B[38;5;28;01mreturn\u001B[39;00m \u001B[38;5;28;43mself\u001B[39;49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mapply\u001B[49m\u001B[43m(\u001B[49m\n\u001B[1;32m    415\u001B[0m \u001B[43m    \u001B[49m\u001B[38;5;124;43m\"\u001B[39;49m\u001B[38;5;124;43mastype\u001B[39;49m\u001B[38;5;124;43m\"\u001B[39;49m\u001B[43m,\u001B[49m\n\u001B[1;32m    416\u001B[0m \u001B[43m    \u001B[49m\u001B[43mdtype\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    417\u001B[0m \u001B[43m    \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    418\u001B[0m \u001B[43m    \u001B[49m\u001B[43merrors\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43merrors\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    419\u001B[0m \u001B[43m    \u001B[49m\u001B[43musing_cow\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43musing_copy_on_write\u001B[49m\u001B[43m(\u001B[49m\u001B[43m)\u001B[49m\u001B[43m,\u001B[49m\n\u001B[1;32m    420\u001B[0m \u001B[43m\u001B[49m\u001B[43m)\u001B[49m\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/internals/managers.py:354\u001B[0m, in \u001B[0;36mBaseBlockManager.apply\u001B[0;34m(self, f, align_keys, **kwargs)\u001B[0m\n\u001B[1;32m    352\u001B[0m         applied \u001B[38;5;241m=\u001B[39m b\u001B[38;5;241m.\u001B[39mapply(f, \u001B[38;5;241m*\u001B[39m\u001B[38;5;241m*\u001B[39mkwargs)\n\u001B[1;32m    353\u001B[0m     \u001B[38;5;28;01melse\u001B[39;00m:\n\u001B[0;32m--> 354\u001B[0m         applied \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;43mgetattr\u001B[39;49m\u001B[43m(\u001B[49m\u001B[43mb\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mf\u001B[49m\u001B[43m)\u001B[49m\u001B[43m(\u001B[49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[38;5;241;43m*\u001B[39;49m\u001B[43mkwargs\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    355\u001B[0m     result_blocks \u001B[38;5;241m=\u001B[39m extend_blocks(applied, result_blocks)\n\u001B[1;32m    357\u001B[0m out \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mtype\u001B[39m(\u001B[38;5;28mself\u001B[39m)\u001B[38;5;241m.\u001B[39mfrom_blocks(result_blocks, \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39maxes)\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/internals/blocks.py:616\u001B[0m, in \u001B[0;36mBlock.astype\u001B[0;34m(self, dtype, copy, errors, using_cow)\u001B[0m\n\u001B[1;32m    596\u001B[0m \u001B[38;5;250m\u001B[39m\u001B[38;5;124;03m\"\"\"\u001B[39;00m\n\u001B[1;32m    597\u001B[0m \u001B[38;5;124;03mCoerce to the new dtype.\u001B[39;00m\n\u001B[1;32m    598\u001B[0m \n\u001B[0;32m   (...)\u001B[0m\n\u001B[1;32m    612\u001B[0m \u001B[38;5;124;03mBlock\u001B[39;00m\n\u001B[1;32m    613\u001B[0m \u001B[38;5;124;03m\"\"\"\u001B[39;00m\n\u001B[1;32m    614\u001B[0m values \u001B[38;5;241m=\u001B[39m \u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39mvalues\n\u001B[0;32m--> 616\u001B[0m new_values \u001B[38;5;241m=\u001B[39m \u001B[43mastype_array_safe\u001B[49m\u001B[43m(\u001B[49m\u001B[43mvalues\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43merrors\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43merrors\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    618\u001B[0m new_values \u001B[38;5;241m=\u001B[39m maybe_coerce_values(new_values)\n\u001B[1;32m    620\u001B[0m refs \u001B[38;5;241m=\u001B[39m \u001B[38;5;28;01mNone\u001B[39;00m\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/dtypes/astype.py:238\u001B[0m, in \u001B[0;36mastype_array_safe\u001B[0;34m(values, dtype, copy, errors)\u001B[0m\n\u001B[1;32m    235\u001B[0m     dtype \u001B[38;5;241m=\u001B[39m dtype\u001B[38;5;241m.\u001B[39mnumpy_dtype\n\u001B[1;32m    237\u001B[0m \u001B[38;5;28;01mtry\u001B[39;00m:\n\u001B[0;32m--> 238\u001B[0m     new_values \u001B[38;5;241m=\u001B[39m \u001B[43mastype_array\u001B[49m\u001B[43m(\u001B[49m\u001B[43mvalues\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    239\u001B[0m \u001B[38;5;28;01mexcept\u001B[39;00m (\u001B[38;5;167;01mValueError\u001B[39;00m, \u001B[38;5;167;01mTypeError\u001B[39;00m):\n\u001B[1;32m    240\u001B[0m     \u001B[38;5;66;03m# e.g. _astype_nansafe can fail on object-dtype of strings\u001B[39;00m\n\u001B[1;32m    241\u001B[0m     \u001B[38;5;66;03m#  trying to convert to float\u001B[39;00m\n\u001B[1;32m    242\u001B[0m     \u001B[38;5;28;01mif\u001B[39;00m errors \u001B[38;5;241m==\u001B[39m \u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mignore\u001B[39m\u001B[38;5;124m\"\u001B[39m:\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/dtypes/astype.py:180\u001B[0m, in \u001B[0;36mastype_array\u001B[0;34m(values, dtype, copy)\u001B[0m\n\u001B[1;32m    176\u001B[0m     \u001B[38;5;28;01mreturn\u001B[39;00m values\n\u001B[1;32m    178\u001B[0m \u001B[38;5;28;01mif\u001B[39;00m \u001B[38;5;129;01mnot\u001B[39;00m \u001B[38;5;28misinstance\u001B[39m(values, np\u001B[38;5;241m.\u001B[39mndarray):\n\u001B[1;32m    179\u001B[0m     \u001B[38;5;66;03m# i.e. ExtensionArray\u001B[39;00m\n\u001B[0;32m--> 180\u001B[0m     values \u001B[38;5;241m=\u001B[39m \u001B[43mvalues\u001B[49m\u001B[38;5;241;43m.\u001B[39;49m\u001B[43mastype\u001B[49m\u001B[43m(\u001B[49m\u001B[43mdtype\u001B[49m\u001B[43m,\u001B[49m\u001B[43m \u001B[49m\u001B[43mcopy\u001B[49m\u001B[38;5;241;43m=\u001B[39;49m\u001B[43mcopy\u001B[49m\u001B[43m)\u001B[49m\n\u001B[1;32m    182\u001B[0m \u001B[38;5;28;01melse\u001B[39;00m:\n\u001B[1;32m    183\u001B[0m     values \u001B[38;5;241m=\u001B[39m _astype_nansafe(values, dtype, copy\u001B[38;5;241m=\u001B[39mcopy)\n",
+-      "File \u001B[0;32m/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/site-packages/pandas/core/arrays/categorical.py:575\u001B[0m, in \u001B[0;36mCategorical.astype\u001B[0;34m(self, dtype, copy)\u001B[0m\n\u001B[1;32m    570\u001B[0m     \u001B[38;5;28;01mexcept\u001B[39;00m (\n\u001B[1;32m    571\u001B[0m         \u001B[38;5;167;01mTypeError\u001B[39;00m,  \u001B[38;5;66;03m# downstream error msg for CategoricalIndex is misleading\u001B[39;00m\n\u001B[1;32m    572\u001B[0m         \u001B[38;5;167;01mValueError\u001B[39;00m,\n\u001B[1;32m    573\u001B[0m     ):\n\u001B[1;32m    574\u001B[0m         msg \u001B[38;5;241m=\u001B[39m \u001B[38;5;124mf\u001B[39m\u001B[38;5;124m\"\u001B[39m\u001B[38;5;124mCannot cast \u001B[39m\u001B[38;5;132;01m{\u001B[39;00m\u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39mcategories\u001B[38;5;241m.\u001B[39mdtype\u001B[38;5;132;01m}\u001B[39;00m\u001B[38;5;124m dtype to \u001B[39m\u001B[38;5;132;01m{\u001B[39;00mdtype\u001B[38;5;132;01m}\u001B[39;00m\u001B[38;5;124m\"\u001B[39m\n\u001B[0;32m--> 575\u001B[0m         \u001B[38;5;28;01mraise\u001B[39;00m \u001B[38;5;167;01mValueError\u001B[39;00m(msg)\n\u001B[1;32m    577\u001B[0m     result \u001B[38;5;241m=\u001B[39m take_nd(\n\u001B[1;32m    578\u001B[0m         new_cats, ensure_platform_int(\u001B[38;5;28mself\u001B[39m\u001B[38;5;241m.\u001B[39m_codes), fill_value\u001B[38;5;241m=\u001B[39mfill_value\n\u001B[1;32m    579\u001B[0m     )\n\u001B[1;32m    581\u001B[0m \u001B[38;5;28;01mreturn\u001B[39;00m result\n",
+-      "\u001B[0;31mValueError\u001B[0m: Cannot cast object dtype to float32"
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "min_samples_split: 2\n"
+      ]
+     }
+    ],
+@@ -3901,15 +3884,24 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "end_time": "2024-01-13T19:07:53.316533Z",
+-     "start_time": "2024-01-13T19:07:52.756550Z"
++     "end_time": "2024-01-13T19:17:27.583245Z",
++     "start_time": "2024-01-13T19:17:26.913114Z"
+     }
+    },
+    "execution_count": 72
+   },
+   {
+    "cell_type": "code",
+-   "outputs": [],
++   "outputs": [
++    {
++     "name": "stdout",
++     "output_type": "stream",
++     "text": [
++      "Accuracy: 0.86373438302242\n",
++      "Balanced Accuracy: 0.6844936666686996\n"
++     ]
++    }
++   ],
+    "source": [
+     "from sklearn.metrics import balanced_accuracy_score, accuracy_score\n",
+     "\n",
+@@ -3923,9 +3915,11 @@
+    "metadata": {
+     "collapsed": false,
+     "ExecuteTime": {
+-     "start_time": "2024-01-13T19:07:53.260902Z"
++     "end_time": "2024-01-13T19:17:27.585357Z",
++     "start_time": "2024-01-13T19:17:27.495158Z"
+     }
+-   }
++   },
++   "execution_count": 73
+   }
+  ],
+  "metadata": {
