@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment="compare models, only remove one outlier">
-      <change afterPath="$PROJECT_DIR$/AC 2.0.ipynb" afterDir="false" />
+    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment="grid search in 2.2 (without dimensional reducing)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AC.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AC 2.0.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC 2.0.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AC 2.1.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC 2.1.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AC 2.2.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC 2.2.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +27,7 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="QODANA_PROBLEMS_VIEW_TAB" />
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;customColor&quot;: &quot;&quot;,
@@ -40,27 +41,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "DecisionTree",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "settings.qodana",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;DecisionTree&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.qodana&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="QodanaReportsService">
-    <option name="descriptions">
-      <ReportDescription localRun="true" path="/private/var/folders/z0/24mzs0z565s6qpzztgbdrj780000gn/T/qodana_output/qodana.sarif.json" reportGuid="dbd238c7-e9bc-4925-9911-28d04047bdf6" reportId="AC.ipynb/qodana/2024-01-08" />
-    </option>
-  </component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -80,7 +76,8 @@
       <workItem from="1704713736660" duration="17312000" />
       <workItem from="1704815002735" duration="24000" />
       <workItem from="1705178096310" duration="4912000" />
-      <workItem from="1705252784101" duration="10324000" />
+      <workItem from="1705252784101" duration="32314000" />
+      <workItem from="1705330556989" duration="1062000" />
     </task>
     <task id="LOCAL-00001" summary="decision tree with tuning hyperparameters">
       <option name="closed" value="true" />
@@ -162,11 +159,62 @@
       <option name="project" value="LOCAL" />
       <updated>1705229612519</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="handling outliers">
+      <option name="closed" value="true" />
+      <created>1705268345404</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1705268345404</updated>
+    </task>
+    <task id="LOCAL-00012" summary="handling outliers">
+      <option name="closed" value="true" />
+      <created>1705310912116</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1705310912116</updated>
+    </task>
+    <task id="LOCAL-00013" summary="grid">
+      <option name="closed" value="true" />
+      <created>1705317525328</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1705317525328</updated>
+    </task>
+    <task id="LOCAL-00014" summary="pipe in 2.2">
+      <option name="closed" value="true" />
+      <created>1705324323324</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1705324323324</updated>
+    </task>
+    <task id="LOCAL-00015" summary="grid search in 2.2 (without dimensional reducing)">
+      <option name="closed" value="true" />
+      <created>1705327484396</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1705327484396</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -177,6 +225,10 @@
     <MESSAGE value="remove one outlier" />
     <MESSAGE value="." />
     <MESSAGE value="compare models, only remove one outlier" />
-    <option name="LAST_COMMIT_MESSAGE" value="compare models, only remove one outlier" />
+    <MESSAGE value="handling outliers" />
+    <MESSAGE value="grid" />
+    <MESSAGE value="pipe in 2.2" />
+    <MESSAGE value="grid search in 2.2 (without dimensional reducing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid search in 2.2 (without dimensional reducing)" />
   </component>
 </project>
