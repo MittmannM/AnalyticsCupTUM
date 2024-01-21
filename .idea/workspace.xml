@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment="feature importance">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AC_dataplots.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+    <list default="true" id="547610e8-0122-4ba5-a7e4-1e777c6ec7e3" name="Changes" comment="grid search in 2.2 (without dimensional reducing)">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AC Feature Importance.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/AC Feature Importance.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/random_forest.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/random_forest.ipynb" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -338,7 +336,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705327484396</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="grid search in 2.2 (without dimensional reducing)">
+      <option name="closed" value="true" />
+      <created>1705761733131</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1705761733131</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -367,8 +373,8 @@
     <MESSAGE value="handling outliers" />
     <MESSAGE value="grid" />
     <MESSAGE value="pipe in 2.2" />
-    <MESSAGE value="grid search in 2.2 (without dimensional reducing)" />
     <MESSAGE value="feature importance" />
-    <option name="LAST_COMMIT_MESSAGE" value="feature importance" />
+    <MESSAGE value="grid search in 2.2 (without dimensional reducing)" />
+    <option name="LAST_COMMIT_MESSAGE" value="grid search in 2.2 (without dimensional reducing)" />
   </component>
 </project>
