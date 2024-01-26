@@ -1,9 +1,12 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from imblearn.under_sampling import RandomUnderSampler
 from sklearn.ensemble import RandomForestClassifier, GradientBoostingClassifier
 from sklearn.metrics import confusion_matrix, accuracy_score, balanced_accuracy_score, precision_score, recall_score
 from sklearn.model_selection import train_test_split, cross_val_score
+from imblearn.over_sampling import RandomOverSampler
+
 
 seed = 2024
 np.random.seed(seed)
@@ -112,12 +115,16 @@ X_train, X_test, y_train, y_test = \
                      shuffle=True,
                      random_state=seed)
 
+undersampler = RandomUnderSampler(sampling_strategy='auto', random_state=seed)
+X_train, y_train = undersampler.fit_resample(X_train, y_train)
+
 train_model = GradientBoostingClassifier(n_estimators=400, learning_rate=0.1, max_depth=7, random_state=seed)
 train_model.fit(X_train,y_train)
+
 
 test_set["prediction"] = train_model.predict(test_set.drop("TestSetId", axis=1))
 test_output = pd.DataFrame(columns=["TestSetId", "prediction"])
 test_output["TestSetId"] = test_set["TestSetId"].astype(int)
 test_output["prediction"] = test_set["prediction"].astype(int)
-test_output.to_csv("predictions_LetsSeePaulAllens'BAC_1.csv", index=False)
+test_output.to_csv("predictions_LetsSeePaulAllens'BAC_4.csv", index=False)
 
